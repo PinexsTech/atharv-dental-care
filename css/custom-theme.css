@@ -1,0 +1,447 @@
+/*
+ * Custom Theme Override – ATHARVA DENTAL CLINIC
+ * Palette:
+ *   Primary    : Deep Navy Blue  #1a3a5c
+ *   Accent     : Soft Teal       #2a9d8f
+ *   CTA/Button : Warm Amber      #e9a319
+ *   BG Light   : Light Blue-Gray #f4f8fb
+ *   Text       : Dark Charcoal   #2d3748
+ *   Footer     : Deep Navy       #0f2540
+ */
+
+/* ── Google Font ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+
+/* ── CSS Variables ───────────────────────────────────────── */
+:root {
+  --clr-primary: #1a3a5c;
+  --clr-teal: #2a9d8f;
+  --clr-amber: #e9a319;
+  --clr-bg-light: #f4f8fb;
+  --clr-text: #2d3748;
+  --clr-footer: #0f2540;
+  --clr-white: #ffffff;
+}
+
+/* ── Body & Typography ───────────────────────────────────── */
+body {
+  font-family: 'Nunito', 'Work Sans', sans-serif;
+  color: var(--clr-text);
+  background-color: var(--clr-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr-primary);
+  font-family: 'Nunito', 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: var(--clr-teal);
+}
+
+a:hover {
+  color: var(--clr-primary);
+}
+
+/* ── Navbar ──────────────────────────────────────────────── */
+.ftco_navbar,
+.ftco_navbar.bg-dark,
+.ftco_navbar.scrolled,
+.navbar.ftco-navbar-light {
+  background: var(--clr-primary) !important;
+  box-shadow: 0 2px 15px rgba(26, 58, 92, 0.25);
+}
+
+.ftco_navbar.scrolled {
+  background: var(--clr-primary) !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.88) !important;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+  color: var(--clr-amber) !important;
+}
+
+/* Call Now CTA in nav */
+.navbar-nav .nav-item.cta a {
+  background: var(--clr-amber) !important;
+  color: var(--clr-primary) !important;
+  border-radius: 4px;
+  padding: 6px 18px !important;
+  font-weight: 700;
+}
+
+.navbar-nav .nav-item.cta a:hover {
+  background: #d4930e !important;
+  color: var(--clr-white) !important;
+}
+
+/* ── Buttons ─────────────────────────────────────────────── */
+.btn-primary {
+  background-color: var(--clr-amber) !important;
+  border-color: var(--clr-amber) !important;
+  color: var(--clr-primary) !important;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #d4930e !important;
+  border-color: #d4930e !important;
+  color: var(--clr-white) !important;
+  transform: translateY(-1px);
+}
+
+.btn-success {
+  background-color: #25d366 !important;
+  border-color: #25d366 !important;
+  color: var(--clr-white) !important;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.btn-success:hover {
+  background-color: #1ebe5d !important;
+  border-color: #1ebe5d !important;
+}
+
+/* ── Hero Slider ─────────────────────────────────────────── */
+.home-slider .slider-item .overlay {
+  background: linear-gradient(135deg, rgba(26, 58, 92, 0.72) 0%, rgba(15, 37, 64, 0.55) 100%);
+}
+
+.home-slider .slider-item h1 {
+  color: var(--clr-white) !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.home-slider .slider-item p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* ── Breadcrumb header items ─────────────────────────────── */
+.slider-item.bread-item h1 {
+  color: var(--clr-white) !important;
+}
+
+/* ── Intro Strip (color bands) ───────────────────────────── */
+.ftco-intro .color-1 {
+  background: var(--clr-primary) !important;
+}
+
+.ftco-intro .color-2 {
+  background: var(--clr-teal) !important;
+}
+
+.ftco-intro .color-3 {
+  background: #1d6f6b !important;
+}
+
+.ftco-intro .color-1 h3,
+.ftco-intro .color-2 h3,
+.ftco-intro .color-3 h3,
+.ftco-intro .color-1 p,
+.ftco-intro .color-2 p,
+.ftco-intro .color-3 p,
+.ftco-intro .color-1 span,
+.ftco-intro .color-2 span,
+.ftco-intro .color-3 span,
+.ftco-intro .color-1 a,
+.ftco-intro .color-2 a,
+.ftco-intro .color-3 a,
+.ftco-intro .color-3 label {
+  color: var(--clr-white) !important;
+}
+
+.ftco-intro .color-3 .form-control {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--clr-white);
+}
+
+.ftco-intro .color-3 .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ftco-intro .color-3 .select-wrap .icon {
+  color: var(--clr-white);
+}
+
+.phone-number {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* ── Section Backgrounds ─────────────────────────────────── */
+.ftco-section {
+  background-color: var(--clr-white);
+}
+
+.ftco-section:nth-of-type(even) {
+  background-color: var(--clr-bg-light);
+}
+
+/* ── Section Headings ────────────────────────────────────── */
+.heading-section .subheading {
+  color: var(--clr-teal) !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.heading-section h2 {
+  color: var(--clr-primary) !important;
+}
+
+.heading-section-white h2,
+.heading-section-white p {
+  color: var(--clr-white) !important;
+}
+
+/* ── Service Cards ───────────────────────────────────────── */
+.services .icon {
+  background: 'white' !important;
+  border-color: var(--clr-teal) !important;
+  color: var(--clr-white) !important;
+  transition: background 0.25s, transform 0.25s;
+}
+
+.services:hover .icon {
+  background: var(--clr-primary) !important;
+  transform: scale(1.08);
+}
+
+.services .icon span {
+  color: var(--clr-white) !important;
+}
+
+.services .heading {
+  color: var(--clr-primary) !important;
+  font-weight: 700;
+}
+
+.services {
+  border-radius: 10px;
+  transition: box-shadow 0.25s;
+}
+
+.services:hover {
+  box-shadow: 0 8px 30px rgba(26, 58, 92, 0.12);
+}
+
+/* ── About Section (dark strip) ─────────────────────────── */
+.about-wrap {
+  background: var(--clr-primary) !important;
+}
+
+.about-wrap .heading-section h2,
+.about-wrap .heading-section p,
+.about-wrap .list-services .text h3,
+.about-wrap .list-services .text p {
+  color: var(--clr-white) !important;
+}
+
+.about-wrap .list-services .icon {
+  background: var(--clr-teal) !important;
+}
+
+.about-wrap .list-services .icon span {
+  color: var(--clr-white) !important;
+}
+
+/* ── Counter / Achievements Section ─────────────────────── */
+.ftco-counter.img {
+  background-color: var(--clr-primary) !important;
+}
+
+.ftco-counter .block-18 .text strong.number {
+  color: var(--clr-amber) !important;
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.ftco-counter .block-18 .text span {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.ftco-counter .heading-section-white h2 {
+  color: var(--clr-white) !important;
+}
+
+/* ── Quote / Why Choose Section ─────────────────────────── */
+.ftco-quote,
+.ftco-quote .choose {
+  background: var(--clr-primary) !important;
+}
+
+.ftco-quote .heading-section-white h2,
+.ftco-quote .choose p,
+.ftco-quote .choose ul li {
+  color: var(--clr-white) !important;
+}
+
+.ftco-quote .un-styled li .icon-check {
+  color: var(--clr-amber) !important;
+  margin-right: 8px;
+}
+
+.ftco-quote .heading-section h2 {
+  color: var(--clr-primary) !important;
+}
+
+/* ── Gallery Hover ───────────────────────────────────────── */
+.ftco-gallery .gallery .icon {
+  background: var(--clr-teal) !important;
+}
+
+/* ── Nav pills (about page tabs) ─────────────────────────── */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: var(--clr-teal) !important;
+  color: var(--clr-white) !important;
+}
+
+.nav-pills .nav-link {
+  color: var(--clr-primary) !important;
+  font-weight: 600;
+}
+
+/* ── ftco-section-2 strip (about page) ───────────────────── */
+.ftco-section-2 .about-wrap {
+  background: var(--clr-primary) !important;
+}
+
+/* ── Contact Page ────────────────────────────────────────── */
+.contact-section .contact-info-wrap .dbox {
+  background: var(--clr-bg-light);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.contact-section .contact-info-wrap .icon {
+  background: var(--clr-teal) !important;
+}
+
+.contact-section .contact-info-wrap .icon span {
+  color: var(--clr-white) !important;
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+.ftco-footer,
+.ftco-bg-dark {
+  background: var(--clr-footer) !important;
+}
+
+.ftco-footer h2.ftco-heading-2 {
+  color: var(--clr-amber) !important;
+  font-weight: 700;
+}
+
+.ftco-footer p,
+.ftco-footer li,
+.ftco-footer .block-23 ul li,
+.ftco-footer .block-23 ul li a {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.ftco-footer a:hover {
+  color: var(--clr-amber) !important;
+}
+
+.ftco-footer a {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.ftco-footer-social li a {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.ftco-footer-social li a:hover {
+  background: var(--clr-teal) !important;
+}
+
+.ftco-footer-social li a span {
+  color: var(--clr-white) !important;
+}
+
+/* ── Page loader spinner ─────────────────────────────────── */
+#ftco-loader circle.path {
+  stroke: var(--clr-teal) !important;
+}
+
+/* ── Floating Buttons ────────────────────────────────────── */
+.floating-buttons {
+  position: fixed;
+  bottom: 28px;
+  right: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+.float-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  font-size: 26px;
+  color: #fff !important;
+}
+
+.float-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.38);
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.float-call {
+  background: #e53935 !important;
+}
+
+.float-whatsapp {
+  background: #25d366 !important;
+}
+
+/* ── Appointment form inputs ─────────────────────────────── */
+.form-control:focus {
+  border-color: var(--clr-teal);
+  box-shadow: 0 0 0 0.2rem rgba(42, 157, 143, 0.25);
+}
+
+/* ── Utility ─────────────────────────────────────────────── */
+.text-primary {
+  color: var(--clr-teal) !important;
+}
+
+.bg-primary {
+  background-color: var(--clr-primary) !important;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
